@@ -1,0 +1,140 @@
+
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fa;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #172554;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  margin: 35px 0 15px;
+  color: #172554;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Student list */
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Student card */
+.student-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.student-card h3 {
+  margin-bottom: 10px;
+  color: #172554;
+}
+
+.student-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+/* Student status */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 12px 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.pending {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.inactive {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* View Profile button */
+.student-card button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.student-card button:hover {
+  background-color: #172554;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .student-list {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
